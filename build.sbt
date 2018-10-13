@@ -1,6 +1,8 @@
-name := """RMS"""
+name := """sc"""
 
 version := "1.0-SNAPSHOT"
+
+maintainer := "Thulebona Hadebe <thulebona.hadebe@sc.com>"
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala).settings(
   watchSources ++= (baseDirectory.value / "public/ui" ** "*").get
@@ -12,4 +14,3 @@ scalaVersion := "2.12.7"
 
 libraryDependencies += guice
 libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "3.1.2" % Test
-libraryDependencies += "com.h2database" % "h2" % "1.4.196"
